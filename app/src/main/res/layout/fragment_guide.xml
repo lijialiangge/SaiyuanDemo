@@ -1,8 +1,8 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="layout.guide">
+    tools:context=".guide">
 
     <android.support.v4.view.ViewPager
         android:id="@+id/viewPager"
@@ -10,4 +10,30 @@
         android:layout_height="match_parent"
         android:background="#000000"></android.support.v4.view.ViewPager>
 
-</FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/iv11"
+            android:src="@drawable/login_point_selected"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/iv22"
+            android:src="@drawable/login_point"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/iv33"
+            android:src="@drawable/login_point"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

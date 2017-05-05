@@ -1,4 +1,4 @@
-package layout;
+package com.li.andy.saiyuandemo;
 
 import android.content.Context;
 import android.support.v4.view.PagerAdapter;

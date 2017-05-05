@@ -3,8 +3,6 @@ package com.li.andy.saiyuandemo;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import layout.guide;
-
 public class MainActivity extends AppCompatActivity {
 
     @Override
