@@ -2,7 +2,10 @@ package com.li.andy.saiyuandemo;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.os.Message;
+import android.preference.PreferenceActivity;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
@@ -10,9 +13,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.HeaderViewListAdapter;
 import android.widget.ImageView;
 
 import java.util.ArrayList;
+import java.util.logging.Handler;
 
 
 public class guide extends Fragment implements ViewPager.OnPageChangeListener{
@@ -25,6 +30,7 @@ public class guide extends Fragment implements ViewPager.OnPageChangeListener{
     private ImageView[] dots;
     private int[] rid={R.id.iv11,R.id.iv22,R.id.iv33};
     private Button btn1;
+
 
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate((R.layout.fragment_guide), container, false);
@@ -51,10 +57,10 @@ public class guide extends Fragment implements ViewPager.OnPageChangeListener{
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+
                 Intent intent=new Intent(getActivity(),Main.class);
                 startActivity(intent);
-
-
 
             }
         });
@@ -63,8 +69,12 @@ public class guide extends Fragment implements ViewPager.OnPageChangeListener{
     }
 
 
+
+
     @Override
     public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+
+
 
     }
 
@@ -80,6 +90,8 @@ public class guide extends Fragment implements ViewPager.OnPageChangeListener{
         }
 
     }
+
+
 
     @Override
     public void onPageScrollStateChanged(int state) {
